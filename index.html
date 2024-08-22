@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de texto</title>
 </head>
 <body>
+    <header>
+    </header>
+
+    <main class="cuerpo">
+        <section class="cuerpo__ecriptar">
+            <textarea 
+            name="texto"
+            class="texto"
+            id="texto"
+            cols="30"
+            rows="10"
+            placeholder="Introduce tu texto"
+            ></textarea>
+            <div class="cuerpo__terminos">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cuerpo__botones">
+                <button class="cuerpo__botones__encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <button class="cuerpo__botones__desencriptar" type="button" onclick="desencriptar()">
+                    Desencriptar 
+                </button>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
     
+    <footer>
+    </footer>
+
 </body>
+<script src="index.js"></script>
 </html>
