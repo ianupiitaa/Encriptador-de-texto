@@ -5,7 +5,7 @@ function encriptar(){
     let imagen = document.getElementById("Imagen1");
 
     let tituloMensaje = Document.getElementById("cuerpo__mensaje__encriptado__titulo");
-    let textoCifrado = texto.replace(/e/gi , "erasmo").replace(/i/gi ,"iman").replace(/o/gi,"hora").replace(/u/gi,"yuya").replace(/a/gi,"nano");
+    let textoCifrado = texto.replace(/e/gi, "erasmo").replace(/i/gi, "iman").replace(/o/gi, "hora").replace(/u/gi, "yuya").replace(/a/gi, "nano");
     
     if (texto.length != 0 ){
         texto = textoCifrado;
@@ -14,6 +14,6 @@ function encriptar(){
         //imagen.src = ""               en caso de imagen
     }else{
         imagen.src = ".img/Imagen1.png";
-        alert("ingresa un texto, por favor")
+        alert("ingresa un texto, por favor");
     }
 }
