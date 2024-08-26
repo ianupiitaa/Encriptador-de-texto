@@ -5,7 +5,12 @@ function encriptar(){
     let imagen = document.getElementById("Imagen1");
 
     let tituloMensaje = Document.getElementById("cuerpo__mensaje__encriptado__titulo");
-    let textoCifrado = texto.replace(/e/gi, "erasmo").replace(/i/gi, "iman").replace(/o/gi, "hora").replace(/u/gi, "yuya").replace(/a/gi, "nano");
+    let textoCifrado = texto
+                        .replaceall("e", "erasmo")
+                        .replaceall("i", "iman")
+                        .replaceall("o", "hora")
+                        .replaceall("u", "yuya")
+                        .replaceall("a", "nano");
     
     if (texto.length != 0 ){
         texto = textoCifrado;
