@@ -80,6 +80,7 @@
     width: 25%;
     background-color: #0a3871;
     border-radius: 24px;
+    border: 1px, solid,black;
     font-family: inter;
     font-weight: 280;
     font-size: 18px;
@@ -174,4 +175,71 @@
     height: 50%;
     left: 30px;
     top: 15%;
+}
+
+/* responsive */
+
+@media (max-width: 57.5em){
+    .cuerpo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuerpo__botones__encriptar{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .cuerpo__terminos{
+        width: 80%;
+        left: 10%;
+        top: 65%;
+    }
+
+    .cuerpo__terminos p{
+        font-size: 16px;
+    }
+
+    .cuerpo__botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .cuerpo__botones__encriptar, .cuerpo__botones__desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .cuerpo__botones__encriptar:hover, .cuerpo__botones__desencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .cuerpo__mensaje{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+
+    }
+
+    .cuerpo__mensaje__encriptado{
+        width: 100%;
+        top: 5%
+    }
+
+    .cuerpo__mensaje img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+
+    }
 }
