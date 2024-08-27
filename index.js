@@ -14,7 +14,7 @@ function removefoto() {
         .replace(/u/gi, "5xc")
         .replace(/a/gi, "8ds");
   
-      document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = "Texto encriptado";
+      document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = " ";
       document.getElementById("parrafo").textContent = "";
       removefoto();
       let seccion = document.getElementById("seccion");
@@ -35,7 +35,7 @@ function removefoto() {
         .replace(/5xc/gi, "u")
         .replace(/8ds/gi, "a");
   
-      document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = "Texto desencriptado";
+      document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = " ";
       document.getElementById("parrafo").textContent = "";
       removefoto();
       let seccion = document.getElementById("seccion");
