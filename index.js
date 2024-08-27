@@ -1,4 +1,7 @@
-
+function removefoto(){
+    let imagen = document.getElementById("Imagen1");
+    imagen.style.display = 'none';
+}
 function encriptar(){
     let texto = document.getElementById("texto").value;
     //let parrafo = document.getElementById("parrafo");
@@ -13,10 +16,11 @@ function encriptar(){
                         .replace(/a/gi, "8ds");
     
     if (document.getElementById("texto").value.length !== 0 ){
+
         document.getElementById("texto").value = textoCifrado;
         document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = "Texto encriptado";
         document.getElementById("parrafo").textContent = "";
-        //document.getElementById("Imagen1").src = ""               en caso de imagen
+        removefoto();
     }else{
         imagen.src = ".img/Imagen1.png";
         alert("ingresa un texto, por favor");
@@ -36,7 +40,7 @@ function desencriptar(){
         document.getElementById("texto").value = textoCifrado;
         document.getElementById("cuerpo__mensaje__encriptado__titulo").textContent = "Texto desencriptado";
         document.getElementById("parrafo").textContent = "";
-        //document.getElementById("Imagen1").src = ""               en caso de imagen
+        
     }else{
         imagen.src = ".img/Imagen1.png";
         alert("ingresa un texto, por favor");
